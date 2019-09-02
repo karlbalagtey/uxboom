@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>uxb_uv</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="artwork-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="uxb_uv">
+            <g id="background-grey"></g>
+            <path d="M70.1505292,44.5737593 L70.1505292,20.4806183 M79.8414723,46.4800569 L89.2554124,24.3022037 M88.2360367,52.0650218 L105.27246,35.0285984 M93.7406122,60.2655093 L116.079384,51.2400598 M95.7272992,70.1505292 L119.82044,70.1505292 M93.8210015,79.8414723 L115.998855,89.2554124 M88.2360367,88.2360367 L105.27246,105.27246 M80.0355492,93.7406122 L89.0609987,116.079384 M70.1505292,95.7272992 L70.1505292,119.82044 M60.4595862,93.8210015 L51.0456461,115.998855 M52.0650218,88.2360367 L35.0285984,105.27246 M46.5604463,80.0355492 L24.2216749,89.0609987 M44.5737593,70.1505292 L20.4806183,70.1505292 M46.4800569,60.4595862 L24.3022037,51.0456461 M52.0650218,52.0650218 L35.0285984,35.0285984 M60.2655093,46.5604463 L51.2400598,24.2216749" id="Line-7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+            <circle id="Oval-4" fill="#FFFFFF" cx="70" cy="70" r="22"></circle>
+        </g>
+    </g>
+</svg>

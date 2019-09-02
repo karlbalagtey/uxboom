@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>uxb_ubend</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="artwork-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="uxb_ubend">
+            <g id="background-grey"></g>
+            <g id="Group-2" transform="translate(26.000000, 30.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-2" x="0" y="0" width="13" height="27"></rect>
+                <rect id="Rectangle-4" x="63" y="15" width="22" height="34"></rect>
+                <rect id="Rectangle-2-Copy" transform="translate(74.500000, 7.000000) rotate(-270.000000) translate(-74.500000, -7.000000) " x="68" y="-6" width="13" height="26"></rect>
+                <rect id="Rectangle-2-Copy-2" transform="translate(34.500000, 42.500000) rotate(-270.000000) translate(-34.500000, -42.500000) " x="28" y="29" width="13" height="27"></rect>
+                <path d="M15,34 C15,16.8791728 28.8791728,3 46,3 L46,24.8409091 C40.9415738,24.8409091 36.8409091,28.9415738 36.8409091,34 L15,34 Z" id="Combined-Shape" transform="translate(30.500000, 18.500000) rotate(-270.000000) translate(-30.500000, -18.500000) "></path>
+                <path d="M24,51 L45.4886364,51 C45.4886364,56.0584262 49.5231613,60.1590909 54.5,60.1590909 C59.4768387,60.1590909 63.5113636,56.0584262 63.5113636,51 L85,51 C85,68.1208272 71.3446849,82 54.5,82 C37.6553151,82 24,68.1208272 24,51 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
