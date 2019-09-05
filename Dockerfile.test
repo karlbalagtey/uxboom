@@ -1,0 +1,17 @@
+From node:10.16.3
+
+WORKDIR /uxboom-client
+
+# add `/uxboom-client/node_modules/.bin` to $PATH
+ENV PATH /uxboom-client/node_modules/.bin:$PATH
+
+COPY package*.json /uxboom-client/
+RUN npm install
+
+COPY . /uxboom-client
+
+EXPOSE 3000
+
+RUN ls -la
+
+ENTRYPOINT [ "npm", "run", "test", "--", "--coverage"]

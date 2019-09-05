@@ -1,0 +1,28 @@
+# create an alias for the container built from the node:10.16.3 base image
+FROM node:10.16.3 as builder
+
+# set the working directory inside the container
+WORKDIR /uxboom-client
+
+# copy package.json from local to docker container
+COPY package.json ./
+
+# install dependencies listed in package.json
+RUN npm install
+
+# copy project files from local to working directory in our container
+COPY . .
+
+# create the production build version of the react app
+RUN npm run build
+
+# create a new container from a linux base image that has the aws-cli installed
+FROM mesosphere/aws-cli
+
+# using the alias defined from the first container, copy the contents of the build folder to this container
+COPY --from=builder /uxboom-client/build .
+
+# show files in CLI
+RUN ls -la
+
+CMD ["s3", "sync", "./", "s3://uxboom"]
