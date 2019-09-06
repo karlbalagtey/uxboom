@@ -4,16 +4,16 @@ sudo: required
 services:
     - docker
 #Build our test Docker container
-# before_install:
-#   - docker build -t uxboom-test-container -f Dockerfile.test .
+before_install:
+  - docker build -t uxboom-deploy-container -f Dockerfile.deploy .
 
 # #Run our test Docker container
 # script:
 #   - docker run uxboom-test-container
 
 #Build our deployment container
-before_deploy:
-  - docker build -t uxboom-deploy-container -f Dockerfile.deploy .
+# before_deploy:
+#   - docker build -t uxboom-deploy-container -f Dockerfile.deploy .
 
 #Run our deployment container via shell script if commiting to the master branch
 deploy:
