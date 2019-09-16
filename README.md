@@ -1,3 +1,5 @@
+# UXBoom [![Build Status](https://travis-ci.org/karlbalagtey/uxboom.svg?branch=master)](https://travis-ci.org/karlbalagtey/uxboom)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
