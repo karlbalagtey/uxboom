@@ -20,18 +20,20 @@ const SignIn = () => {
     const handleSubmit = async event => {
         event.preventDefault();
 
+        console.log(email, password);
+
         // emailSignInStart(email, password);
     };
 
     const handleChange = event => {
         const { value, name } = event.target;
 
-        // setUserCredentials({ ...userCredentials, [name]: value });
+        setUserCredentials({ ...userCredentials, [name]: value });
     };
 
     return (
         <SignInContainer>
-            <SignInTitle>Wave CMS - Micro services</SignInTitle>
+            <SignInTitle>UXB CMS</SignInTitle>
             <span>Sign in with your email and password</span>
 
             <form onSubmit={handleSubmit}>
