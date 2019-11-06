@@ -5,6 +5,12 @@ export const DashboardPanelContainer = styled.div`
     flex-direction: column;
     padding: 0 20px;
     width: 100%;
+    margin-left: 230px;
+    transition: all .4s;
+
+    &.collapsed {
+        margin-left: 55px;
+    }
 `;
 
 export const DashboardSplitContainer = styled.section`

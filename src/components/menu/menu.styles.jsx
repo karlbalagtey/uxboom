@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { Link } from "react-router-dom";
 
 export const MenuContainer = styled.div`
@@ -7,6 +8,13 @@ export const MenuContainer = styled.div`
     background: #000;
     height: 100%;
     min-width: 230px;
+    position: absolute;
+    left: 0;
+    transition: all .4s;
+
+    &.collapsed {
+        left: -175px;
+    }
 `;
 
 export const MenuTitle = styled.button`

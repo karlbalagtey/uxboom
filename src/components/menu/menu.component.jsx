@@ -1,69 +1,40 @@
 import React from 'react';
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+import { selectMenuItems } from "../../redux/menu/menu.selectors";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { 
-    faBars, 
-    faHome, 
-    faGlobe,
-    faImage,
-    faCloudUploadAlt,
-    faSitemap,
-    faUsers,
-    faUserCog,
-    faCogs,
-    faFile,
-    faSignOutAlt
-} from '@fortawesome/free-solid-svg-icons'
 
-import { MenuContainer, MenuItem, MenuTitle } from './menu.styles';
+import { MenuContainer, MenuTitle } from './menu.styles';
+import MenuItem from "../menu-item/menu-item.component";
 
-const Menu = () => (
+const Menu = ({ menuItems }) => (
     <MenuContainer>
         <MenuTitle>
-            <span className="sr-only">Toggle</span>
-            <FontAwesomeIcon icon={faBars} />
+            <span className="sr-only">Menu</span>
+            <FontAwesomeIcon icon="fa-bars" />
         </MenuTitle>
-        <MenuItem>
-            <span>Dashboard</span>
-            <FontAwesomeIcon icon={faHome} />
-        </MenuItem>
-        <MenuItem>
-            <span>Edit Site</span>
-            <FontAwesomeIcon icon={faGlobe} />
-        </MenuItem>
-        <MenuItem>
-            <span>Asset Manager</span>
-            <FontAwesomeIcon icon={faImage} />
-        </MenuItem>
-        <MenuItem>
-            <span>Asset Upload</span>
-            <FontAwesomeIcon icon={faCloudUploadAlt} />
-        </MenuItem>
-        <MenuItem>
-            <span>Page Manager</span>
-            <FontAwesomeIcon icon={faSitemap} />
-        </MenuItem>
-        <MenuItem>
-            <span>People Manager</span>
-            <FontAwesomeIcon icon={faUsers} />    
-        </MenuItem>
-        <MenuItem>
-            <span>Settings</span>
-            <FontAwesomeIcon icon={faCogs} />
-        </MenuItem>
-        <MenuItem>
-            <span>Template Manager</span>
-            <FontAwesomeIcon icon={faFile} />   
-        </MenuItem>
-        <MenuItem>
-            <span>Manage Account</span>
-            <FontAwesomeIcon icon={faUserCog} />    
-        </MenuItem>
-        <MenuItem>
+
+        {menuItems.map(({id, ...otherSectionProps}) => (
+            <MenuItem 
+                key={id}
+                {...otherSectionProps}
+            />
+        ))}
+
+        <MenuItem 
+            to="/logout" 
+            style={{marginTop: 'auto'}}
+        >
             <span>Logout</span>
-            <FontAwesomeIcon icon={faSignOutAlt} />    
+            <FontAwesomeIcon icon="faSignOutAlt" />    
         </MenuItem>
     </MenuContainer>
 );
 
-export default Menu;
+const mapStateToProps = createStructuredSelector({
+    menuItems: selectMenuItems
+});
+
+export default connect(mapStateToProps)(Menu);
