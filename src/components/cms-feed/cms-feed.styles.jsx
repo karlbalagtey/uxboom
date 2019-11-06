@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentFeedContainer = styled.section`
+export const CMSFeedContainer = styled.section`
     display: flex;
     flex-direction: column;
     background: lightgray;

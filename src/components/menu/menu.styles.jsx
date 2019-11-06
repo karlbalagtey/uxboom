@@ -9,11 +9,27 @@ export const MenuContainer = styled.div`
     min-width: 230px;
 `;
 
+export const MenuTitle = styled.button`
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background: lightgray;
+    border: 0;
+    color: #000;
+    text-align: right;
+
+    :hover {
+        color: #f26c7c;
+    }
+`;
+
 export const MenuItem = styled(Link)`
     padding: 10px 20px;
     text-decoration: none;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
 
     :hover {
         color: #f26c7c;
