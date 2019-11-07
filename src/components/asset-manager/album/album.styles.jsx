@@ -6,6 +6,7 @@ export const AlbumContainer = styled.div`
     background: lightgray;
     display: block;
     text-align: center;
+    margin: 10px;
     transition: all .4s;
 
     &:hover {
