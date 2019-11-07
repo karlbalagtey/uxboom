@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/homepage/homepage.component";
 import SignInPage from "./pages/sign-in/sign-in-component";
-import DashboardPage from "./pages/dashboard/dashboard.component";
+import DashboardPage from "./pages/admin/dashboard/dashboard.component";
+import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.component";
 
 import { GlobalStyle } from "./global.styles";
 
@@ -18,6 +19,7 @@ const App = () => {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/login" component={SignInPage} />
                 <Route exact path="/dashboard" component={DashboardPage} />
+                <Route exact path="/asset-manager" component={AssetManagerPage} />
             </Switch>
         </Router>
     );
