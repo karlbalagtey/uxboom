@@ -1,40 +1,38 @@
-import React from 'react';
+import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { selectMenuItems } from "../../redux/menu/menu.selectors";
+import { toggleMenu } from "../../redux/menu/menu.actions";
+import { selectMenuItems, selectMenuCollapse } from "../../redux/menu/menu.selectors";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { MenuContainer, MenuTitle } from './menu.styles';
-import MenuItem from "../menu-item/menu-item.component";
+import { MenuContainer, MenuTitle, MenuItem } from "./menu.styles";
+import MenuItemWrap from "../menu-item/menu-item.component";
 
-const Menu = ({ menuItems }) => (
-    <MenuContainer>
-        <MenuTitle>
+const Menu = ({ menuItems, dispatch, collapsed }) => (
+    <MenuContainer className={collapsed ? 'collapsed' : ''}>
+        <MenuTitle
+            onClick={() => dispatch(toggleMenu())}
+        >
             <span className="sr-only">Menu</span>
             <FontAwesomeIcon icon="fa-bars" />
         </MenuTitle>
 
-        {menuItems.map(({id, ...otherSectionProps}) => (
-            <MenuItem 
-                key={id}
-                {...otherSectionProps}
-            />
+        {menuItems.map(({ id, ...otherSectionProps }) => (
+            <MenuItemWrap key={id} {...otherSectionProps} />
         ))}
 
-        <MenuItem 
-            to="/logout" 
-            style={{marginTop: 'auto'}}
-        >
+        <MenuItem to="/logout" style={{ marginTop: "auto" }}>
             <span>Logout</span>
-            <FontAwesomeIcon icon="faSignOutAlt" />    
+            <FontAwesomeIcon icon="faSignOutAlt" />
         </MenuItem>
     </MenuContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
-    menuItems: selectMenuItems
+    menuItems: selectMenuItems,
+    collapsed: selectMenuCollapse
 });
 
 export default connect(mapStateToProps)(Menu);

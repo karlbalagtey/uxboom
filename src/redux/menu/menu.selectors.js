@@ -6,3 +6,8 @@ export const selectMenuItems = createSelector(
     [selectMenu],
     menu => menu.items
 );
+
+export const selectMenuCollapse = createSelector(
+    [selectMenu],
+    menu => menu.collapsed
+);

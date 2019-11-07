@@ -1,4 +1,7 @@
+import MenuActionTypes from './menu.types';
+
 const INITIAL_STATE = {
+    collapsed: false,
     items: [
         {
             title: "Dashboard",
@@ -59,6 +62,11 @@ const INITIAL_STATE = {
 
 const menuReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
+        case MenuActionTypes.TOGGLE_MENU:
+            return {
+                ...state,
+                collapsed: !state.collapsed
+            };
         default:
             return state;
     }
