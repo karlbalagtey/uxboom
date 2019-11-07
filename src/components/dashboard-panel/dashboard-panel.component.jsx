@@ -1,15 +1,19 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import { 
+import { selectMenuCollapse } from "../../redux/menu/menu.selectors";
+
+import {
     DashboardPanelContainer,
-    DashboardSplitContainer,
-} from './dashboard-panel.styles';
+    DashboardSplitContainer
+} from "./dashboard-panel.styles";
 
-import ContentFeed from '../content-feed/content-feed.component';
-import CMSFeed from '../cms-feed/cms-feed.component';
+import ContentFeed from "../content-feed/content-feed.component";
+import CMSFeed from "../cms-feed/cms-feed.component";
 
-const DashboardPanel = () => (
-    <DashboardPanelContainer>
+const DashboardPanel = ({ collapsed }) => (
+    <DashboardPanelContainer className={ collapsed ? 'collapsed' : ''}>
         <section>
             <h1>Welcome to UXBoom CMS</h1>
         </section>
@@ -21,4 +25,8 @@ const DashboardPanel = () => (
     </DashboardPanelContainer>
 );
 
-export default DashboardPanel;
+const mapStateToProps = createStructuredSelector({
+    collapsed: selectMenuCollapse
+});
+
+export default connect(mapStateToProps, null)(DashboardPanel);
