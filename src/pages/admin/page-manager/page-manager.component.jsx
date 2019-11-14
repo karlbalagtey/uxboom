@@ -3,15 +3,25 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import { selectPageCollections } from "../../../redux/page/page.selectors";
-import { PageManagerContainer, PageManagerTitle } from "./page-manager.styles";
+import {
+    ParentPageManagerContainer,
+    PageManagerContainer,
+    PageManagerTitle
+} from "./page-manager.styles";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Page from "../../../components/page-manager/page/page.component";
 
 const PageManager = ({ pages }) => (
     <Fragment>
         <h1>Manage Pages</h1>
-        <PageManagerContainer>
+        <ParentPageManagerContainer>
             <PageManagerTitle>
+                <button>
+                    <span className="sr-only">More</span>
+                    <FontAwesomeIcon icon={faPlus} />
+                </button>
                 <a href="/">Home</a>
             </PageManagerTitle>
             <PageManagerContainer>
@@ -19,7 +29,7 @@ const PageManager = ({ pages }) => (
                     <Page key={id} {...otherCollectionProps} />
                 ))}
             </PageManagerContainer>
-        </PageManagerContainer>
+        </ParentPageManagerContainer>
     </Fragment>
 );
 
