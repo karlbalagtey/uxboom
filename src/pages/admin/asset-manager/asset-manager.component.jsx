@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
@@ -8,14 +8,14 @@ import { AssetManagerContainer } from "./asset-manager.styles";
 import Album from "../../../components/asset-manager/album/album.container";
 
 const AssetManager = ({ albums }) => (
-    <section className="dashboard-panel">
+    <Fragment>
         <h1>Asset Manager</h1>
         <AssetManagerContainer>
             {albums.map(({ id, ...otherCollectionProps }) => (
                 <Album key={id} {...otherCollectionProps} />
             ))}
         </AssetManagerContainer>
-    </section>
+    </Fragment>
 );
 
 const mapStateToProps = createStructuredSelector({

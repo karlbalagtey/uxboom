@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "./pages/homepage/homepage.component";
 import SignInPage from "./pages/sign-in/sign-in-component";
-import DashboardPage from "./pages/admin/dashboard/dashboard.component";
-import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.component";
+import DashboardPage from "./pages/admin/dashboard/dashboard.container";
+import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.container";
 
 import { GlobalStyle } from "./global.styles";
 
