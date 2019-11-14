@@ -15,8 +15,7 @@ const Menu = ({ menuItems, dispatch, collapsed }) => (
         <MenuTitle
             onClick={() => dispatch(toggleMenu())}
         >
-            <span className="sr-only">Menu</span>
-            <FontAwesomeIcon icon="fa-bars" />
+            Menu
         </MenuTitle>
 
         {menuItems.map(({ id, ...otherSectionProps }) => (
