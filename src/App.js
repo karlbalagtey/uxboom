@@ -5,6 +5,7 @@ import HomePage from "./pages/homepage/homepage.component";
 import SignInPage from "./pages/sign-in/sign-in-component";
 import DashboardPage from "./pages/admin/dashboard/dashboard.container";
 import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.container";
+import PageManagerPage from "./pages/admin/page-manager/page-manager.container";
 
 import { GlobalStyle } from "./global.styles";
 
@@ -20,6 +21,7 @@ const App = () => {
                 <Route exact path="/login" component={SignInPage} />
                 <Route exact path="/dashboard" component={DashboardPage} />
                 <Route exact path="/asset-manager" component={AssetManagerPage} />
+                <Route exact path="/page-manager" component={PageManagerPage} />
             </Switch>
         </Router>
     );

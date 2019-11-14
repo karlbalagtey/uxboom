@@ -4,6 +4,7 @@ import storage from "redux-persist/lib/storage";
 
 import menuReducer from "./menu/menu.reducer";
 import albumReducer from "./album/album.reducer";
+import pageReducer from "./page/page.reducer";
 
 const persistConfig = {
     key: "root",
@@ -13,7 +14,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
     menu: menuReducer,
-    album: albumReducer
+    album: albumReducer,
+    page: pageReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);
