@@ -5,21 +5,28 @@ import { createStructuredSelector } from "reselect";
 import { selectUserCollection } from "../../../redux/user/user.selectors";
 import { selectUserGroupCollection } from "../../../redux/user-group/user-group.selectors";
 
-import { 
+import User from "../../../components/people-manager/user/user.component";
+import UserGroup from "../../../components/people-manager/user-group/user-group.component";
+
+import {
     PeopleManagerContainer,
-    PeopleManagerGroup,
-    PeopleManagerUser
+    PeopleManagerGroupsContainer,
+    PeopleManagerUsersContainer
 } from "./people-manager.styles";
 
 const PeopleManager = ({ users, userGroups }) => (
     <PeopleManagerContainer>
-        {users.map(({ id, ...otherCollectionProps }) => (
-            <PeopleManagerUser key={id} {...otherCollectionProps} />
-        ))}
+        <PeopleManagerGroupsContainer>
+            {userGroups.map(({ id, ...otherCollectionProps }) => (
+                <UserGroup key={id} {...otherCollectionProps} />
+            ))}
+        </PeopleManagerGroupsContainer>
 
-        {userGroups.map(({ id, ...otherCollectionProps }) => (
-            <PeopleManagerGroup key={id} {...otherCollectionProps} />
-        ))}
+        <PeopleManagerUsersContainer>
+            {users.map(({ id, ...otherCollectionProps }) => (
+                <User key={id} {...otherCollectionProps} />
+            ))}
+        </PeopleManagerUsersContainer>
     </PeopleManagerContainer>
 );
 
