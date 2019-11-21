@@ -4,12 +4,12 @@ export const PeopleManagerContainer = styled.div`
     display: flex;
 `;
 
-export const PeopleManagerGroups = styled.div`
+export const PeopleManagerGroup = styled.div`
     display: flex;
     flex-direction: column;
 `;
 
-export const PeopleManagerUsers = styled.div`
+export const PeopleManagerUser = styled.div`
     display: flex;
     flex-direction: column;
 `;
