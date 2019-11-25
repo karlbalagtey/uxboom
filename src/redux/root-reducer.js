@@ -7,6 +7,7 @@ import albumReducer from "./album/album.reducer";
 import pageReducer from "./page/page.reducer";
 import userReducer from "./user/user.reducer";
 import userGroupReducer from "./user-group/user-group.reducer";
+import templateReducer from "./template/template.reducer";
 
 const persistConfig = {
     key: "root",
@@ -19,7 +20,8 @@ const rootReducer = combineReducers({
     album: albumReducer,
     page: pageReducer,
     user: userReducer,
-    userGroup: userGroupReducer
+    userGroup: userGroupReducer,
+    template: templateReducer
 });
 
 export default persistReducer(persistConfig, rootReducer);
