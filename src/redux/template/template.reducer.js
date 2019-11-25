@@ -3,35 +3,35 @@ const INITIAL_STATE = {
         {
             id: 1,
             name: "Home",
-            description: "",
+            description: "Homepage template for the main face of the website",
             fileName: "home",
             theme: "UXBoom"
         },
         {
             id: 2,
             name: "Standard",
-            description: "",
+            description: "Standard template for basic layout",
             fileName: "standard",
             theme: "UXBoom"
         },
         {
             id: 3,
             name: "List",
-            description: "",
-            fileName: "",
+            description: "List template for listing child pages in a layout",
+            fileName: "list",
             theme: "UXBoom"
         },
         {
             id: 4,
             name: "Search",
-            description: "",
+            description: "Search results layout",
             fileName: "search",
             theme: "UXBoom"
         },
         {
             id: 5,
             name: "Blog",
-            description: "",
+            description: "Blog page layout with author",
             fileName: "blog",
             theme: "UXBoom"
         }

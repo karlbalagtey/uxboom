@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
@@ -15,19 +15,25 @@ import {
 } from "./people-manager.styles";
 
 const PeopleManager = ({ users, userGroups }) => (
-    <PeopleManagerContainer>
-        <PeopleManagerGroupsContainer>
-            {userGroups.map(({ id, ...otherCollectionProps }) => (
-                <UserGroup key={id} {...otherCollectionProps} />
-            ))}
-        </PeopleManagerGroupsContainer>
+    <Fragment>
+        <section>
+            <h1>People manager</h1>
+        </section>
 
-        <PeopleManagerUsersContainer>
-            {users.map(({ id, ...otherCollectionProps }) => (
-                <User key={id} {...otherCollectionProps} />
-            ))}
-        </PeopleManagerUsersContainer>
-    </PeopleManagerContainer>
+        <PeopleManagerContainer>
+            <PeopleManagerGroupsContainer>
+                {userGroups.map(({ id, ...otherCollectionProps }) => (
+                    <UserGroup key={id} {...otherCollectionProps} />
+                ))}
+            </PeopleManagerGroupsContainer>
+
+            <PeopleManagerUsersContainer>
+                {users.map(({ id, ...otherCollectionProps }) => (
+                    <User key={id} {...otherCollectionProps} />
+                ))}
+            </PeopleManagerUsersContainer>
+        </PeopleManagerContainer>
+    </Fragment>
 );
 
 const mapStateToProps = createStructuredSelector({

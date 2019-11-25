@@ -1,13 +1,34 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-import { TemplateManagerContainer } from "./template-manager.styles";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-const TemplateManager = () => (
-    <TemplateManagerContainer>
+import {
+    TemplateManagerContainer,
+    TemplateManagerItem,
+    TemplateManagerTitle
+} from "./template-manager.styles";
+import { selectTemplateCollection } from "../../../redux/template/template.selectors";
+
+const mapStateToProps = createStructuredSelector({
+    templates: selectTemplateCollection
+});
+
+const TemplateManager = ({ templates }) => (
+    <Fragment>
         <section>
             <h1>Template Manager</h1>
         </section>
-    </TemplateManagerContainer>
+        <TemplateManagerContainer>
+            {templates.map(template => (
+                <TemplateManagerItem>
+                    <TemplateManagerTitle>{template.name}</TemplateManagerTitle>
+                    <p>{template.description}</p>
+                    <p>{template.fileName}</p>
+                </TemplateManagerItem>
+            ))}
+        </TemplateManagerContainer>
+    </Fragment>
 );
 
-export default TemplateManager;
+export default connect(mapStateToProps, null)(TemplateManager);

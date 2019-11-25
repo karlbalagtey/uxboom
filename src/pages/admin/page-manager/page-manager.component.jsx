@@ -15,7 +15,9 @@ import Page from "../../../components/page-manager/page/page.component";
 
 const PageManager = ({ pages }) => (
     <Fragment>
-        <h1>Manage Pages</h1>
+        <section>
+            <h1>Manage Pages</h1>
+        </section>
         <ParentPageManagerContainer>
             <PageManagerTitle>
                 <button>

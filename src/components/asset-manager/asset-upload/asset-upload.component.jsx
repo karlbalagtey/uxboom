@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { AssetUploadContainer } from "./asset-upload.styles";
 
 const AssetUpload = () => (
-    <AssetUploadContainer>
+    <Fragment>
         <section>
             <h1>Upload assets</h1>
         </section>
-    </AssetUploadContainer>
+
+        <AssetUploadContainer>
+            <form>
+                <label>Upload asset</label>
+                <input type="file" />
+            </form>
+        </AssetUploadContainer>
+    </Fragment>
 );
 
 export default AssetUpload;

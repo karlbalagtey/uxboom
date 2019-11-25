@@ -9,7 +9,9 @@ import Album from "../../../components/asset-manager/album/album.container";
 
 const AssetManager = ({ albums }) => (
     <Fragment>
-        <h1>Asset Manager</h1>
+        <section>
+            <h1>Asset Manager</h1>
+        </section>
         <AssetManagerContainer>
             {albums.map(({ id, ...otherCollectionProps }) => (
                 <Album key={id} {...otherCollectionProps} />
