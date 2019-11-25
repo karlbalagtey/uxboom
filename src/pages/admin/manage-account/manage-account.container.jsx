@@ -5,17 +5,15 @@ import { connect } from "react-redux";
 import { selectMenuCollapse } from "../../../redux/menu/menu.selectors";
 
 import WithCollapse from "../../../components/with-collapse/with-collapse.component";
-import WithSpinner from "../../../components/with-spinner/with-spinner.component";
-import Dashboard from "./dashboard.component";
+import ManageAccount from "./manage-account.component";
 
 const mapStateToProps = createStructuredSelector({
     isCollapsed: selectMenuCollapse
 });
 
-const DashboardContainer = compose(
+const ManageAccountContainer = compose(
     connect(mapStateToProps),
-    WithCollapse,
-    WithSpinner
-)(Dashboard);
+    WithCollapse
+)(ManageAccount)
 
-export default DashboardContainer;
+export default ManageAccountContainer;

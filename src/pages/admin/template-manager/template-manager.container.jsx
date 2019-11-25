@@ -6,16 +6,16 @@ import { selectMenuCollapse } from "../../../redux/menu/menu.selectors";
 
 import WithCollapse from "../../../components/with-collapse/with-collapse.component";
 import WithSpinner from "../../../components/with-spinner/with-spinner.component";
-import Dashboard from "./dashboard.component";
+import TemplateManager from "./template-manager.component";
 
 const mapStateToProps = createStructuredSelector({
     isCollapsed: selectMenuCollapse
 });
 
-const DashboardContainer = compose(
+const TemplateManagerContainer = compose(
     connect(mapStateToProps),
     WithCollapse,
     WithSpinner
-)(Dashboard);
+)(TemplateManager);
 
-export default DashboardContainer;
+export default TemplateManagerContainer;

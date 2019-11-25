@@ -7,6 +7,11 @@ import DashboardPage from "./pages/admin/dashboard/dashboard.container";
 import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.container";
 import PageManagerPage from "./pages/admin/page-manager/page-manager.container";
 import PeopleManagerPage from "./pages/admin/people-manager/people-manager.container";
+import SettingsPage from "./pages/admin/settings-page/settings-page.container";
+import TemplateManagerPage from "./pages/admin/template-manager/template-manager.container";
+import ManageAccountPage from "./pages/admin/manage-account/manage-account.container";
+import AssetUploadPage from "./pages/admin/asset-manager/asset-upload.container";
+
 import { GlobalStyle } from "./global.styles";
 
 import Menu from "./components/menu/menu.component";
@@ -62,6 +67,18 @@ const App = () => {
                     path="/people-manager"
                     component={PeopleManagerPage}
                 />
+                <Route exact path="/settings" component={SettingsPage} />
+                <Route
+                    exact
+                    path="/template-manager"
+                    component={TemplateManagerPage}
+                />
+                <Route
+                    exact
+                    path="/manage-account"
+                    component={ManageAccountPage}
+                />
+                <Route exact path="/asset-upload" component={AssetUploadPage} />
             </Switch>
         </Router>
     );
