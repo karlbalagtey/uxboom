@@ -15,7 +15,9 @@ const Menu = ({ menuItems, dispatch, collapsed }) => (
         <MenuTitle
             onClick={() => dispatch(toggleMenu())}
         >
-            Menu
+            Close
+
+            <FontAwesomeIcon icon="arrow-left" />
         </MenuTitle>
 
         {menuItems.map(({ id, ...otherSectionProps }) => (
@@ -24,7 +26,7 @@ const Menu = ({ menuItems, dispatch, collapsed }) => (
 
         <MenuItem to="/logout" style={{ marginTop: "auto" }}>
             <span>Logout</span>
-            <FontAwesomeIcon icon="faSignOutAlt" />
+            <FontAwesomeIcon icon="sign-out-alt" />
         </MenuItem>
     </MenuContainer>
 );

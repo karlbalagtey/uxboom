@@ -5,55 +5,55 @@ const INITIAL_STATE = {
     items: [
         {
             title: "Dashboard",
-            icon: "faHome",
+            icon: "home",
             id: 1,
             linkUrl: "/dashboard"
         },
         {
             title: "Edit Site",
-            icon: "faGlobe",
+            icon: "globe",
             id: 2,
             linkUrl: "/edit-site"
         },
         {
             title: "Asset Manager",
-            icon: "faImage",
+            icon: "image",
             id: 3,
             linkUrl: "/asset-manager"
         },
         {
             title: "Asset Upload",
-            icon: "faCloudUploadAlt",
+            icon: "cloud-upload-alt",
             id: 4,
             linkUrl: "/asset-upload"
         },
         {
             title: "Page Manager",
-            icon: "faSitemap",
+            icon: "sitemap",
             id: 5,
             linkUrl: "/page-manager"
         },
         {
             title: "People Manager",
-            icon: "faUsers",
+            icon: "users",
             id: 6,
             linkUrl: "/people-manager"
         },
         {
             title: "Settings",
-            icon: "faCogs",
+            icon: "cogs",
             id: 7,
             linkUrl: "/settings"
         },
         {
             title: "Template Manager",
-            icon: "faFile",
+            icon: "file",
             id: 8,
             linkUrl: "/template-manager"
         },
         {
             title: "Manage Account",
-            icon: "faUserCog",
+            icon: "user-cog",
             id: 9,
             linkUrl: "/manage-account"
         }
