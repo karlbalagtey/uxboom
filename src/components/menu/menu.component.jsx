@@ -16,8 +16,7 @@ const Menu = ({ menuItems, dispatch, collapsed }) => (
             onClick={() => dispatch(toggleMenu())}
         >
             Close
-
-            <FontAwesomeIcon icon="arrow-left" />
+            <FontAwesomeIcon icon={collapsed ? "arrow-right" : "arrow-left"} />
         </MenuTitle>
 
         {menuItems.map(({ id, ...otherSectionProps }) => (
