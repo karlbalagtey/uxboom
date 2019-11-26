@@ -22,7 +22,7 @@ export const GroupContainer = styled.div`
     }
 `;
 
-export const FormInputContainer = styled.input`
+export const FormTextAreaContainer = styled.textarea`
     background: none;
     background-color: white;
     color: ${subColor};
@@ -30,7 +30,6 @@ export const FormInputContainer = styled.input`
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
-    border: none;
     border-radius: 0;
     border-bottom: 1px solid ${subColor};
     margin-top: 25px;
@@ -44,13 +43,13 @@ export const FormInputContainer = styled.input`
     }
 `;
 
-export const FormInputLabel = styled.label`
+export const FormTextAreaLabel = styled.label`
     color: ${subColor};
     font-size: 16px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 0;
+    left: 5px;
     top: 10px;
     transition: 300ms ease all;
 
@@ -59,7 +58,7 @@ export const FormInputLabel = styled.label`
     }
 `;
 
-export const FormInputDescription = styled.div`
+export const FormTextAreaDescription = styled.div`
     color: ${subColor};
     font-size: 16px;
     margin-top: 10px;
