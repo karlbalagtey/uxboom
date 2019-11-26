@@ -19,7 +19,7 @@ const SettingsPage = () => {
     const handleSubmit = async event => {
         event.preventDefault();
 
-        // signUp({ email, password, displayName });
+        // saveSettingsPage({ analytics, adminEmail, name, supportEmail });
     };
 
     const handleChange = event => {
@@ -34,7 +34,7 @@ const SettingsPage = () => {
                 <h1>Manage UXBoom CMS settings</h1>
             </section>
             <SettingsPageContainer>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <FormTextArea 
                         col="50"
                         rows="4"
