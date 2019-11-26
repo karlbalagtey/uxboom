@@ -25,9 +25,8 @@ export const GroupContainer = styled.div`
 export const FormInputContainer = styled.input`
     background: none;
     background-color: white;
-    color: ${subColor};
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px 10px 10px 0;
     display: block;
     width: 100%;
     border: none;

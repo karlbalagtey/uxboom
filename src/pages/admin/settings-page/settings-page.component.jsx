@@ -41,7 +41,7 @@ const SettingsPage = () => {
                         name="analytics"
                         value={analytics}
                         onChange={handleChange}
-                        label="Analytics"
+                        label="Enter analytics code here"
                         description="Enter an analytics tracking script here. This can then be inserted into templates when the site is in production"
                     />
                     <FormInput
@@ -49,7 +49,7 @@ const SettingsPage = () => {
                         name="adminEmail"
                         value={adminEmail}
                         onChange={handleChange}
-                        label="Site admin email"
+                        label="Enter site admin email here"
                         description="The email address for the site administrator. This will be used as the 'from' field for any CMS emails."
                     />
                     <FormInput
@@ -57,7 +57,7 @@ const SettingsPage = () => {
                         name="name"
                         value={name}
                         onChange={handleChange}
-                        label="Site name"
+                        label="Enter site name here"
                         description="The website name / title"
                     />
                     <FormInput
@@ -65,7 +65,7 @@ const SettingsPage = () => {
                         name="supportEmail"
                         value={supportEmail}
                         onChange={handleChange}
-                        label="Site support email"
+                        label="Enter site support email here"
                         description="Email address that support queries will be sent to"
                     />
                     <CustomButton type="submit">Save settings</CustomButton>

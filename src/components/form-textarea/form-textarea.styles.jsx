@@ -4,7 +4,8 @@ const subColor = "grey";
 const mainColor = "black";
 
 const shrinkLabelStyles = css`
-    top: -14px;
+    top: -20px;
+    left: 0;
     font-size: 12px;
     color: ${mainColor};
 `;
@@ -27,7 +28,7 @@ export const FormTextAreaContainer = styled.textarea`
     background-color: white;
     color: ${subColor};
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px 10px;
     display: block;
     width: 100%;
     border-radius: 0;
@@ -49,7 +50,7 @@ export const FormTextAreaLabel = styled.label`
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 5px;
+    left: 10px;
     top: 10px;
     transition: 300ms ease all;
 
