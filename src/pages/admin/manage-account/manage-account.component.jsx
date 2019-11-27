@@ -36,6 +36,7 @@ const ManageAccount = () => {
                 <p>You can use this form to update your account details. If you leave the password fields blank your password will not be changed.</p>
                 <form onSubmit={handleSubmit}>
                     <FormInput
+                        groupClassName="form-input-group"
                         type="text"
                         name="name"
                         value={name}
@@ -43,6 +44,7 @@ const ManageAccount = () => {
                         label="Name"
                     />
                     <FormInput
+                        groupClassName="form-input-group"
                         type="password"
                         name="currentPassword"
                         value={currentPassword}
@@ -50,6 +52,7 @@ const ManageAccount = () => {
                         label="Current password"
                     />
                     <FormInput
+                        groupClassName="form-input-group"
                         type="password"
                         name="newPassword"
                         value={newPassword}
@@ -57,6 +60,7 @@ const ManageAccount = () => {
                         label="New password"
                     />
                     <FormInput
+                        groupClassName="form-input-group"
                         type="password"
                         name="confirmPassword"
                         value={confirmPassword}

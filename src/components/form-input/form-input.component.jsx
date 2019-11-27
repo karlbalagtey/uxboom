@@ -9,7 +9,7 @@ import {
 } from "./form-input.styles";
 
 const FormInput = ({ handleChange, label, description, ...props }) => (
-    <GroupContainer>
+    <GroupContainer className={props.groupClassName}>
         <GroupCol>
             <FormInputContainer onChange={handleChange} {...props} />
             {label ? (
