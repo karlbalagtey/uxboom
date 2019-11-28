@@ -26,12 +26,6 @@ const PeopleManager = ({ users, userGroups }) => (
                     <UserGroup key={id} {...otherCollectionProps} />
                 ))}
             </PeopleManagerGroupsContainer>
-
-            <PeopleManagerUsersContainer>
-                {users.map(({ id, ...otherCollectionProps }) => (
-                    <User key={id} {...otherCollectionProps} />
-                ))}
-            </PeopleManagerUsersContainer>
         </PeopleManagerContainer>
     </Fragment>
 );

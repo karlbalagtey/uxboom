@@ -30,8 +30,9 @@ export const TemplateManagerRowEmpty = styled.tr`
 `;
 
 export const TemplatePanelButton = styled.button`
-    background: red;
-    color: white;
+    background: transparent;
+    border: 0;
+    color: #000;
     height: 100%;
     width: 100%;
     font-size: 18px;
@@ -39,7 +40,8 @@ export const TemplatePanelButton = styled.button`
 
     &:hover {
         cursor: pointer;
-        background: lightgray;
-        color: #000;
+        background: red;
+        color: #fff;
+        border-radius: 30px;
     }
 `;

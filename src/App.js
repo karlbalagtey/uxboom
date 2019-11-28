@@ -24,6 +24,9 @@ import {
     faCloudUploadAlt,
     faSitemap,
     faUsers,
+    faUserShield,
+    faUserFriends,
+    faUserEdit,
     faCogs,
     faFile,
     faUserCog,
@@ -33,7 +36,7 @@ import {
     faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 
-const App = () => {
+const App = ({ match }) => {
     library.add(
         faHome,
         faGlobe,
@@ -41,6 +44,9 @@ const App = () => {
         faCloudUploadAlt,
         faSitemap,
         faUsers,
+        faUserShield,
+        faUserFriends,
+        faUserEdit,
         faCogs,
         faFile,
         faUserCog,

@@ -2,7 +2,7 @@ const INITIAL_STATE = {
     collections: [
         {
             title: "Super Users",
-            icon: "faHome",
+            icon: "user-shield",
             id: 1,
             linkUrl: "/users/super-users",
             users: [
@@ -14,7 +14,7 @@ const INITIAL_STATE = {
         },
         {
             title: "Administrators",
-            icon: "faGlobe",
+            icon: "user-friends",
             id: 2,
             linkUrl: "/users/administrators",
             users: [
@@ -26,7 +26,7 @@ const INITIAL_STATE = {
         },
         {
             title: "Editor",
-            icon: "faImage",
+            icon: "user-edit",
             id: 3,
             linkUrl: "/users/editor",
             users: [
@@ -42,7 +42,7 @@ const INITIAL_STATE = {
         },
         {
             title: "UXB",
-            icon: "faCloudUploadAlt",
+            icon: "user-cog",
             id: 4,
             linkUrl: "/users/uxb",
             users: [
