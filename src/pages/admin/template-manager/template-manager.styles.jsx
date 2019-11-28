@@ -12,5 +12,12 @@ export const TemplateManagerHeader = styled.thead`
     th {
         padding: 20px 10px;
         color: #fff;
+
+        :last-child {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
     }
 `;

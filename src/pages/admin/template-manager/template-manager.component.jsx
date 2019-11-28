@@ -3,6 +3,8 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
     TemplateManagerContainer,
     TemplateManagerHeader
@@ -28,7 +30,7 @@ const TemplateManager = ({ templates }) => (
                     <th>Description</th>
                     <th>Filename</th>
                     <th>Pages</th>
-                    <th></th>
+                    <th><FontAwesomeIcon icon="cogs" /></th>
                 </tr>
             </TemplateManagerHeader>
 

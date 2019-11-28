@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export const MenuItemWrap = styled(Link)`
+export const MenuItemWrap = styled(NavLink)`
     padding: 10px 20px;
     text-decoration: none;
     cursor: pointer;
@@ -10,7 +10,7 @@ export const MenuItemWrap = styled(Link)`
     display: flex;
     justify-content: space-between;
 
-    :hover {
+    :hover, &.active {
         color: #f26c7c;
     }
 `;

@@ -7,7 +7,7 @@ import { MenuItemWrap } from "./menu-item.styles";
 
 const MenuItem = ({ title, linkUrl, icon }) => {
     return (
-        <MenuItemWrap to={linkUrl}>
+        <MenuItemWrap to={linkUrl} activeClassName="active">
             <span>{title}</span>
             <FontAwesomeIcon icon={icon} />
         </MenuItemWrap>
