@@ -14,17 +14,3 @@ export const TemplateManagerHeader = styled.thead`
         color: #fff;
     }
 `;
-
-export const TemplateManagerBody = styled.body`
-
-`;
-
-export const TemplateManagerRow = styled.tr`
-    :nth-child(even) {
-        background: #f5f5f5;
-    }
-
-    td {
-        padding: 20px 10px;
-    }
-`;

@@ -5,9 +5,11 @@ import { createStructuredSelector } from "reselect";
 
 import {
     TemplateManagerContainer,
-    TemplateManagerHeader,
-    TemplateManagerRow
+    TemplateManagerHeader
 } from "./template-manager.styles";
+
+import TemplateManagerRow from "../../../components/template-manager/template-row.component";
+
 import { selectTemplateCollection } from "../../../redux/template/template.selectors";
 
 const mapStateToProps = createStructuredSelector({
@@ -25,16 +27,14 @@ const TemplateManager = ({ templates }) => (
                     <th>Name</th>
                     <th>Description</th>
                     <th>Filename</th>
+                    <th>Pages</th>
+                    <th></th>
                 </tr>
             </TemplateManagerHeader>
 
             <tbody>
                 {templates.map(template => (
-                    <TemplateManagerRow>
-                        <td>{template.name}</td>
-                        <td>{template.description}</td>
-                        <td>{template.fileName}</td>
-                    </TemplateManagerRow>
+                    <TemplateManagerRow key={template.id} template={template} />
                 ))}
             </tbody>
         </TemplateManagerContainer>

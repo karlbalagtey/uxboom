@@ -29,7 +29,8 @@ import {
     faUserCog,
     faSignOutAlt,
     faArrowLeft,
-    faArrowRight
+    faArrowRight,
+    faTrashAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
@@ -45,7 +46,8 @@ const App = () => {
         faUserCog,
         faSignOutAlt,
         faArrowLeft,
-        faArrowRight
+        faArrowRight,
+        faTrashAlt
     );
 
     return (
