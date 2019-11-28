@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AlbumContainer = styled.div`
-    height: 300px;
+    height: 250px;
     background: lightgray;
     display: block;
     text-align: center;

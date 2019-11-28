@@ -5,8 +5,8 @@ import { createStructuredSelector } from "reselect";
 
 import {
     TemplateManagerContainer,
-    TemplateManagerItem,
-    TemplateManagerTitle
+    TemplateManagerHeader,
+    TemplateManagerRow
 } from "./template-manager.styles";
 import { selectTemplateCollection } from "../../../redux/template/template.selectors";
 
@@ -20,13 +20,23 @@ const TemplateManager = ({ templates }) => (
             <h1>Template Manager</h1>
         </section>
         <TemplateManagerContainer>
-            {templates.map(template => (
-                <TemplateManagerItem>
-                    <TemplateManagerTitle>{template.name}</TemplateManagerTitle>
-                    <p>{template.description}</p>
-                    <p>{template.fileName}</p>
-                </TemplateManagerItem>
-            ))}
+            <TemplateManagerHeader>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Filename</th>
+                </tr>
+            </TemplateManagerHeader>
+
+            <tbody>
+                {templates.map(template => (
+                    <TemplateManagerRow>
+                        <td>{template.name}</td>
+                        <td>{template.description}</td>
+                        <td>{template.fileName}</td>
+                    </TemplateManagerRow>
+                ))}
+            </tbody>
         </TemplateManagerContainer>
     </Fragment>
 );
