@@ -7,55 +7,55 @@ const INITIAL_STATE = {
             title: "Dashboard",
             icon: "home",
             id: 1,
-            linkUrl: "/dashboard"
+            link_url: "/dashboard"
         },
         {
             title: "Edit Site",
             icon: "globe",
             id: 2,
-            linkUrl: "/edit-site"
+            link_url: "/edit-site"
         },
         {
             title: "Asset Manager",
             icon: "image",
             id: 3,
-            linkUrl: "/asset-manager"
+            link_url: "/asset-manager"
         },
         {
             title: "Asset Upload",
             icon: "cloud-upload-alt",
             id: 4,
-            linkUrl: "/asset-upload"
+            link_url: "/asset-upload"
         },
         {
             title: "Page Manager",
             icon: "sitemap",
             id: 5,
-            linkUrl: "/page-manager"
+            link_url: "/page-manager"
         },
         {
             title: "People Manager",
             icon: "users",
             id: 6,
-            linkUrl: "/people-manager"
+            link_url: "/people-manager"
         },
         {
             title: "Settings",
             icon: "cogs",
             id: 7,
-            linkUrl: "/settings"
+            link_url: "/settings"
         },
         {
             title: "Template Manager",
             icon: "file",
             id: 8,
-            linkUrl: "/template-manager"
+            link_url: "/template-manager"
         },
         {
             title: "Manage Account",
             icon: "user-cog",
             id: 9,
-            linkUrl: "/manage-account"
+            link_url: "/manage-account"
         }
     ]
 };

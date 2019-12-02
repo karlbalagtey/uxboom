@@ -2,19 +2,15 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-import { selectUserCollection } from "../../../redux/user/user.selectors";
 import { selectUserGroupCollection } from "../../../redux/user-group/user-group.selectors";
 
-import User from "../../../components/people-manager/user/user.component";
-import UserGroup from "../../../components/people-manager/user-group/user-group.component";
-
+import UserGroupDashboard from "../../../components/people-manager/user-group/user-group-dashboard.container";
 import {
     PeopleManagerContainer,
-    PeopleManagerGroupsContainer,
-    PeopleManagerUsersContainer
+    PeopleManagerGroupsContainer
 } from "./people-manager.styles";
 
-const PeopleManager = ({ users, userGroups }) => (
+const PeopleManager = ({ userGroups, match }) => (
     <Fragment>
         <section>
             <h1>People manager</h1>
@@ -22,16 +18,13 @@ const PeopleManager = ({ users, userGroups }) => (
 
         <PeopleManagerContainer>
             <PeopleManagerGroupsContainer>
-                {userGroups.map(({ id, ...otherCollectionProps }) => (
-                    <UserGroup key={id} {...otherCollectionProps} />
-                ))}
+                <UserGroupDashboard />
             </PeopleManagerGroupsContainer>
         </PeopleManagerContainer>
     </Fragment>
 );
 
 const mapStateToProps = createStructuredSelector({
-    users: selectUserCollection,
     userGroups: selectUserGroupCollection
 });
 

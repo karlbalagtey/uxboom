@@ -4,31 +4,31 @@ const INITIAL_STATE = {
             name: "Karl Marx",
             icon: "faHome",
             id: 1,
-            linkUrl: "/user/karl-mark"
+            link_url: "/user/karl-mark"
         },
         {
             name: "John Doe",
             icon: "faGlobe",
             id: 2,
-            linkUrl: "/user/john-doe"
+            link_url: "/user/john-doe"
         },
         {
             name: "Joe Luiz",
             icon: "faImage",
             id: 3,
-            linkUrl: "/user/joe-luiz"
+            link_url: "/user/joe-luiz"
         },
         {
             name: "Caesar Montano",
             icon: "faCloudUploadAlt",
             id: 4,
-            linkUrl: "/user/caesar-montano"
+            link_url: "/user/caesar-montano"
         },
         {
             name: "Hana Montana",
             icon: "faSitemap",
             id: 5,
-            linkUrl: "/user/hana-montana"
+            link_url: "/user/hana-montana"
         }
     ]
 };

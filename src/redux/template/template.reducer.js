@@ -4,7 +4,7 @@ const INITIAL_STATE = {
             id: 1,
             name: "Home",
             description: "Homepage template for the main face of the website",
-            fileName: "home",
+            file_name: "home",
             theme: "UXBoom",
             pages: [
                 {
@@ -16,7 +16,7 @@ const INITIAL_STATE = {
             id: 2,
             name: "Standard",
             description: "Standard template for basic layout",
-            fileName: "standard",
+            file_name: "standard",
             theme: "UXBoom",
             pages: [
                 {
@@ -34,7 +34,7 @@ const INITIAL_STATE = {
             id: 3,
             name: "List",
             description: "List template for listing child pages in a layout",
-            fileName: "list",
+            file_name: "list",
             theme: "UXBoom",
             pages: [
                 {
@@ -49,7 +49,7 @@ const INITIAL_STATE = {
             id: 4,
             name: "Search",
             description: "Search results layout",
-            fileName: "search",
+            file_name: "search",
             theme: "UXBoom",
             pages: []
         },
@@ -57,7 +57,7 @@ const INITIAL_STATE = {
             id: 5,
             name: "Blog",
             description: "Blog page layout with author",
-            fileName: "blog",
+            file_name: "blog",
             theme: "UXBoom",
             pages:[]
         }

@@ -4,10 +4,10 @@ const INITIAL_STATE = {
             title: "Super Users",
             icon: "user-shield",
             id: 1,
-            linkUrl: "/users/super-users",
+            link_url: "/users/super-users",
             users: [
                 {
-                    userId: 1,
+                    user_id: 1,
                     name: 'Superman'
                 }
             ]
@@ -16,10 +16,10 @@ const INITIAL_STATE = {
             title: "Administrators",
             icon: "user-friends",
             id: 2,
-            linkUrl: "/users/administrators",
+            link_url: "/users/administrators",
             users: [
                 {
-                    userId: 2,
+                    user_id: 2,
                     name: 'Karl Mark'
                 }
             ]
@@ -28,14 +28,14 @@ const INITIAL_STATE = {
             title: "Editor",
             icon: "user-edit",
             id: 3,
-            linkUrl: "/users/editor",
+            link_url: "/users/editor",
             users: [
                 {
-                    userId: 3,
+                    user_id: 3,
                     name: 'Mark Balagtey'
                 },
                 {
-                    userId: 4,
+                    user_id: 4,
                     name: 'John Doe'
                 }
             ]
@@ -44,10 +44,10 @@ const INITIAL_STATE = {
             title: "UXB",
             icon: "user-cog",
             id: 4,
-            linkUrl: "/users/uxb",
+            link_url: "/users/uxb",
             users: [
                 {
-                    userId: 5,
+                    user_id: 5,
                     name: 'Mary Jane'
                 }
             ]
