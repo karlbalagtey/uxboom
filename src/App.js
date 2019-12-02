@@ -33,7 +33,8 @@ import {
     faSignOutAlt,
     faArrowLeft,
     faArrowRight,
-    faTrashAlt
+    faTrashAlt,
+    faMinus
 } from "@fortawesome/free-solid-svg-icons";
 
 const App = ({ match }) => {
@@ -53,7 +54,8 @@ const App = ({ match }) => {
         faSignOutAlt,
         faArrowLeft,
         faArrowRight,
-        faTrashAlt
+        faTrashAlt,
+        faMinus
     );
 
     return (
@@ -61,21 +63,46 @@ const App = ({ match }) => {
             <GlobalStyle />
             <Menu />
             <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/login" component={SignInPage} />
-                <Route exact path="/dashboard" component={DashboardPage} />
+                <Route 
+                    exact 
+                    path="/" 
+                    component={HomePage} 
+                />
+                <Route 
+                    exact 
+                    path="/login" 
+                    component={SignInPage} 
+                />
+                <Route 
+                    exact 
+                    path="/dashboard" 
+                    component={DashboardPage} 
+                />
                 <Route
                     exact
                     path="/asset-manager"
                     component={AssetManagerPage}
                 />
-                <Route exact path="/page-manager" component={PageManagerPage} />
+                <Route 
+                    exact 
+                    path="/page-manager" 
+                    component={PageManagerPage} 
+                />
                 <Route
                     exact
                     path="/people-manager"
                     component={PeopleManagerPage}
                 />
-                <Route exact path="/settings" component={SettingsPage} />
+                <Route
+                    exact
+                    path="/people-manager/:id"
+                    component={PeopleManagerPage}
+                />
+                <Route 
+                    exact 
+                    path="/settings" 
+                    component={SettingsPage} 
+                />
                 <Route
                     exact
                     path="/template-manager"
@@ -86,7 +113,11 @@ const App = ({ match }) => {
                     path="/manage-account"
                     component={ManageAccountPage}
                 />
-                <Route exact path="/asset-upload" component={AssetUploadPage} />
+                <Route 
+                    exact 
+                    path="/asset-upload" 
+                    component={AssetUploadPage} 
+                />
             </Switch>
         </Router>
     );

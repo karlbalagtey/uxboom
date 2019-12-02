@@ -10,7 +10,6 @@ import {
 } from "./page-manager.styles";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Page from "../../../components/page-manager/page/page.component";
 
 const PageManager = ({ pages }) => (
@@ -22,7 +21,7 @@ const PageManager = ({ pages }) => (
             <PageManagerTitle>
                 <button>
                     <span className="sr-only">More</span>
-                    <FontAwesomeIcon icon={faPlus} />
+                    <FontAwesomeIcon icon="minus" />
                 </button>
                 <a href="/">Home</a>
             </PageManagerTitle>
