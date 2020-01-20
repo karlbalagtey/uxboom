@@ -10,19 +10,23 @@ import {
     PeopleManagerGroupsContainer
 } from "./people-manager.styles";
 
-const PeopleManager = ({ userGroups, match }) => (
-    <Fragment>
-        <section>
-            <h1>People manager</h1>
-        </section>
+const PeopleManager = ({ userGroups, match }) => {
+    console.log(match);
 
-        <PeopleManagerContainer>
-            <PeopleManagerGroupsContainer>
-                <UserGroupDashboard />
-            </PeopleManagerGroupsContainer>
-        </PeopleManagerContainer>
-    </Fragment>
-);
+    return (
+        <Fragment>
+            <section>
+                <h1>People manager</h1>
+            </section>
+
+            <PeopleManagerContainer>
+                <PeopleManagerGroupsContainer>
+                    <UserGroupDashboard />
+                </PeopleManagerGroupsContainer>
+            </PeopleManagerContainer>
+        </Fragment>
+    )
+};
 
 const mapStateToProps = createStructuredSelector({
     userGroups: selectUserGroupCollection

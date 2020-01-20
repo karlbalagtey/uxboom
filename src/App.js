@@ -7,6 +7,7 @@ import DashboardPage from "./pages/admin/dashboard/dashboard.container";
 import AssetManagerPage from "./pages/admin/asset-manager/asset-manager.container";
 import PageManagerPage from "./pages/admin/page-manager/page-manager.container";
 import PeopleManagerPage from "./pages/admin/people-manager/people-manager.container";
+// import PeopleManagerDashboard from "./pages/admin/people-manager/"
 import SettingsPage from "./pages/admin/settings-page/settings-page.container";
 import TemplateManagerPage from "./pages/admin/template-manager/template-manager.container";
 import ManageAccountPage from "./pages/admin/manage-account/manage-account.container";
@@ -89,13 +90,7 @@ const App = ({ match }) => {
                     component={PageManagerPage} 
                 />
                 <Route
-                    exact
                     path="/people-manager"
-                    component={PeopleManagerPage}
-                />
-                <Route
-                    exact
-                    path="/people-manager/:id"
                     component={PeopleManagerPage}
                 />
                 <Route 
