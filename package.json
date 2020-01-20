@@ -1,6 +1,7 @@
 {
   "name": "uxboom",
-  "version": "0.1.0",
+  "homepage": "https://github.com/karlbalagtey/uxboom",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",

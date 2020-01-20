@@ -8,9 +8,11 @@ export const AssetUploadContainer = styled.section`
     margin-bottom: 20px;
     align-items: center;
     justify-content: center;
+    transition: background .2s;
     
     &:hover {
         cursor: pointer;
+        background: gray;
     }
 
     p {
